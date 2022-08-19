@@ -221,32 +221,32 @@ export default {
         {
           title: "Employee Rewards",
           description: "Cat ipsum dolor sit amet, fight an alligator and win and cuddle no cuddle cuddle love scratch scratch. Chase mice nap all day. Love me! x so stand in front of the computer screen, yet thug cat . My water bowl is clean and freshly replenished, so i'll drink from the toilet",
-          link: "./src/assets/reward.png"
+          link: "reward.png"
         },
         {
           title: "Incident Tracking",
           description: "prepare to pounce eat too much then proceed to regurgitate all over living room carpet while humans eat dinner. Lie in the sink all day lick the plastic bag so hiss and stare at nothing then run suddenly away and attack like a vicious monster.",
-          link: "./src/assets/incident.png"
+          link: "incident.png"
         },
         {
           title: "Company Announcements",
           description: "Fooled again thinking the dog likes me sleep on dog bed, force dog to sleep on floor a nice warm laptop for me to sit on hey! you there, with the hands, i show my fluffy belly but it's a trap! if you pet it i will tear up your hand kitty loves pigs, human is washing you why halp oh the horror flee scratch hiss bite. ",
-          link: "./src/assets/ann.png"
+          link: "ann.png"
         },
         {
           title: "Employee Apparel Ordering",
           description: "Wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again i like big cats and i can not lie or flop over my cat stared at me he was sipping his tea, too, stick butt in face leave fur on owners clothes.",
-          link: "./src/assets/app.png"
+          link: "app.png"
         },
         {
           title: "Chemical Tracking",
           description: "Cat ipsum dolor sit amet, meowing non stop for food thug cat , for a nice warm laptop for me to sit on mark territory. Catasstrophe sniff catnip and act crazy. Disappear for four days and return home with an expensive injury",
-          link: "./src/assets/chem.png"
+          link: "chem.png"
         },
         {
           title: "Resource Hub",
           description: "Meow meow, i tell my human i is not fat, i is fluffy. Get scared by doggo also cucumerro cat cat moo moo lick ears lick paws yet sit on human they not getting up ever knock over christmas tree. Prance along on top of the garden fence, annoy the neighbor's dog and make it bark sit in box.",
-          link: "./src/assets/docs.png"
+          link: "docs.png"
         },
       ],
       projects: [],

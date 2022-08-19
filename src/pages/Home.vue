@@ -198,7 +198,7 @@ export default defineComponent({
   name: 'Home',
   setup() {
     return {
-      header: './src/assets/car2.jpeg',
+      header: 'car2.jpeg',
       name:'',
       email:'',
       phone:'',
