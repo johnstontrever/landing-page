@@ -107,6 +107,9 @@
                   replaced.
                 </p>
               </div>
+              <div class="col-10 q-mb-md">
+                <q-separator size=".2rem" spaced dark />
+              </div>
             </div>
           </div>
 
@@ -178,26 +181,30 @@
                 <h2 class="text-dark text-bold">Get in touch</h2>
               </div>
               <div class="col-12 bg-accent q-pa-xl shadow-12">
-                <div class="row">
-                  <div class="col-12">
-                    <q-input v-model="name" label="Name" dark />
+                <form ref="form">
+
+                  <div class="row">
+                    <div class="col-12">
+                      <q-input v-model="name" name="name" id="name" label="Name" dark />
+                    </div>
+                    <div class="col-12">
+                      <q-input v-model="email" name="email" id="email" label="Email" dark />
+                    </div>
+                    <div class="col-12">
+                      <q-input v-model="phone" name="phone" id="phone" label="Phone" dark />
+                    </div>
+                    <div class="col-12">
+                      <q-input v-model="text" name="text" id="text" type="textarea"
+                        label="Get in touch to schedule a demo or find out more information!" dark />
+                    </div>
                   </div>
-                  <div class="col-12">
-                    <q-input v-model="email" label="Email" dark />
+                  <div class="row q-mt-md">
+                    <div class="col-12">
+                      <q-btn color="secondary" type="submit" @click.prevent="sendEmail()">Send</q-btn>
+                    </div>
                   </div>
-                  <div class="col-12">
-                    <q-input v-model="phone" label="Phone" dark />
-                  </div>
-                  <div class="col-12">
-                    <q-input v-model="text" type="textarea"
-                      label="Get in touch to schedule a demo or find out more information!" dark />
-                  </div>
-                </div>
-                <div class="row q-mt-md">
-                  <div class="col-12">
-                    <q-btn color="secondary">Send</q-btn>
-                  </div>
-                </div>
+                </form>
+
               </div>
             </div>
           </div>
@@ -214,7 +221,7 @@
 
               <div class="col-12 text-white bg-secondary q-pt-xl q-pb-xl q-pl-xl q-pr-xl big-rounded">
                 <q-list dense padding class="rounded-borders text-center">
-                  <q-item v-for="item in items" >
+                  <q-item v-for="item in items">
                     <q-item-section>
                       <span class="text-h5">
                         {{item}}
@@ -241,16 +248,21 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
+import emailjs from '@emailjs/browser';
+import { useQuasar } from 'quasar'
 
 export default defineComponent({
+
   name: 'Home',
   setup() {
+    const $q = useQuasar()
+
     return {
       header: 'car2.jpeg',
-      name: '',
-      email: '',
-      phone: '',
-      text: '',
+      name: ref(''),
+      email: ref(''),
+      phone: ref(''),
+      text: ref(''),
       expanded: false,
       items: [
         "Incident Tracking",
@@ -297,7 +309,34 @@ export default defineComponent({
         //   link: "docs.png"
         // },
       ],
+      showSuccess () {
+        $q.notify({
+          message: 'Successfully Sent!',
+          color: 'positive'
+        })
+      },
+      showFail () {
+        $q.notify({
+          message: 'Could not send, please try again!',
+          color: 'negative'
+        })
+      }
     }
+  },
+  methods: {
+    sendEmail() {
+      console.log('refs', this.$refs.form)
+      emailjs.sendForm('service_couma57', 'template_pecm3wh', this.$refs.form, 'ozgq75zCBbhpcno6R')
+        .then((result) => {
+          this.showSuccess()
+
+          console.log('SUCCESS!', result.text);
+        }, (error) => {
+          this.showFail()
+          console.log('FAILED...', error.text);
+        });
+    },
+
   }
 })
 </script>

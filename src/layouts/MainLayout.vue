@@ -5,14 +5,15 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="../assets/logos/2.png" class="logo">
+            <img src="../assets/logos/2.png"
+      class="logo">
           </q-avatar>
           Wash.Cars
         </q-toolbar-title>
         <q-tabs align="right">
-        <q-route-tab to="/#about" label="About" />
+        <!-- <q-route-tab to="/#about" label="About" />
         <q-route-tab to="/#faq" label="FAQ" />
-        <q-route-tab to="/#contact" label="Contact" />
+        <q-route-tab to="/#contact" label="Contact" /> -->
       </q-tabs>
       </q-toolbar>
     </q-header>
@@ -25,7 +26,7 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="../assets/logos/2.png" class="logo">
+            <img src="../assets/logos/2.png">
           </q-avatar>
         </q-toolbar-title>
       </q-toolbar>
