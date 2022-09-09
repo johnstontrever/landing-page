@@ -1,14 +1,6 @@
 <template>
   <q-page class="flex bg-img">
     <div class="">
-      <!-- <div class="row">
-        <div class="col">
-          <img
-          alt="Quasar logo"
-          src="~assets/quasar-logo-vertical.svg"
-          style="width: 200px; height: 200px">
-        </div>
-      </div> -->
       <div class="row">
         <div class="col-12">
           <q-img :src=header alt="Header image" class="bg-header responsive">
