@@ -285,7 +285,7 @@ export default defineComponent({
         {
           title: "Employee Rewards",
           description: "Looking for a way to let your employees know they went above and beyond? Wash.Cars employee rewards module gives employees another reason to give their all each day on the job.",
-          link: "reward sm.png"
+          link: "medal.png"
         },
 
         // {
@@ -332,6 +332,7 @@ export default defineComponent({
 
           console.log('SUCCESS!', result.text);
         }, (error) => {
+
           this.showFail()
           console.log('FAILED...', error.text);
         });
