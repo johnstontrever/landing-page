@@ -5,16 +5,15 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="../assets/logos/2.png"
-      class="logo">
+            <img src="../assets/logos/2.png" class="logo">
           </q-avatar>
           Wash.Cars
         </q-toolbar-title>
         <q-tabs align="right">
-        <!-- <q-route-tab to="/#about" label="About" />
+          <!-- <q-route-tab to="/#about" label="About" />
         <q-route-tab to="/#faq" label="FAQ" />
         <q-route-tab to="/#contact" label="Contact" /> -->
-      </q-tabs>
+        </q-tabs>
       </q-toolbar>
     </q-header>
 
@@ -29,6 +28,9 @@
             <img src="../assets/logos/2.png">
           </q-avatar>
         </q-toolbar-title>
+        <q-toolbar-section>
+          <a href="mailto:info@wash.cars" class="email" style="color:white">info@wash.cars</a>
+        </q-toolbar-section>
       </q-toolbar>
     </q-footer>
 
@@ -41,7 +43,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'MainLayout',
 
-  setup () {
+  setup() {
     return {
       essentialLinks: "Wash.Cars"
     }
@@ -50,5 +52,7 @@ export default defineComponent({
 </script>
 
 <style>
-
+.email{
+  color: "white"
+}
 </style>
