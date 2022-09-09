@@ -21,15 +21,13 @@
       <router-view />
     </q-page-container>
 
-    <q-footer reveal elevated class="bg-grey-8 text-white">
+    <q-footer reveal elevated class="bg-white">
       <q-toolbar>
         <q-toolbar-title>
-          <q-avatar>
-            <img src="../assets/logos/2.png">
-          </q-avatar>
+            <img src="../assets/carName.png" class="footer-logo">
         </q-toolbar-title>
         <q-toolbar-section>
-          <a href="mailto:info@wash.cars" class="email" style="color:white">info@wash.cars</a>
+          <a href="mailto:info@wash.cars" class="email" style="color:black">info@wash.cars</a>
         </q-toolbar-section>
       </q-toolbar>
     </q-footer>
@@ -53,6 +51,9 @@ export default defineComponent({
 
 <style>
 .email{
-  color: "white"
+  color: "black"
+}
+.footer-logo{
+  height: 3rem;
 }
 </style>
