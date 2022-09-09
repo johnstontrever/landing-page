@@ -1,9 +1,9 @@
 {
-  "name": "portal",
+  "name": "wash.cars",
   "version": "0.0.1",
-  "description": "Portal landing page",
-  "productName": "Portal",
-  "author": "Trever J <tjohnston@metroexpresscarwash.com>",
+  "description": "Wash.Cars landing page",
+  "productName": "Wash.Cars",
+  "author": "Trever J <tjohnston@wash.cars>",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"

@@ -268,12 +268,12 @@ export default defineComponent({
         {
           title: "Incident Tracking",
           description: "Never forget about an incident again. Be prepared for handling and tracking incidents, from first report until the incident is resolved. Wash.Cars streamlines all of these processes and more.",
-          link: "14.png"
+          link: "cracked.png"
         },
         {
           title: "Employee Rewards",
           description: "Looking for a way to let your employees know they went above and beyond? Wash.Cars employee rewards module gives employees another reason to give their all each day on the job.",
-          link: "17.png"
+          link: "reward sm.png"
         },
 
         // {
