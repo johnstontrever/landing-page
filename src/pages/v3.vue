@@ -7,8 +7,7 @@
             <div class="absolute-full text-subtitle2 flex flex-center">
               <div class="row text-center">
                 <div class="col-12 text-center">
-                  <span class="text-white text-bold text-h2">Wash.Cars</span>
-
+                  <span class="text-white text-bold text-h2 header-text">Wash.Cars</span>
                 </div>
                 <div class="col-12 text-center">
                   <span class="text-h4 text-white text-bold">Take your car wash to the next level.</span>
@@ -333,3 +332,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+  .header-text{
+    font-family: 'Exo', sans-serif;
+  }
+</style>
