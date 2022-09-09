@@ -23,7 +23,7 @@
 
                 </div>
                 <div class="col-12 text-center q-mt-xl">
-                  <q-btn color="primary" size="xl" no-caps>Schedule a demo!</q-btn>
+                  <q-btn color="primary" size="xl" href="#contact" no-caps>Schedule a demo!</q-btn>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="row justify-center q-mt-xl q-mb-xl">
               <div class="col-12 text-center">
-                <q-btn no-caps color="secondary" size="xl">Full Feature List</q-btn>
+                <q-btn no-caps color="secondary" size="xl" href="#features">Full Feature List</q-btn>
               </div>
             </div>
           </div>
