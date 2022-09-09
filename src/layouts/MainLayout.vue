@@ -5,7 +5,7 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="../assets/logos/2.png" class="logo">
           </q-avatar>
           Wash.Cars
         </q-toolbar-title>
@@ -25,7 +25,7 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="../assets/logos/2.png" class="logo">
           </q-avatar>
         </q-toolbar-title>
       </q-toolbar>
