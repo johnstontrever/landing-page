@@ -26,7 +26,7 @@
       <div class="dark-bg q-pt-xl q-pb-lg">
         <div class="row justify-center">
           <!-- CALLOUT -->
-          <div id="callout" class="col-9">
+          <div id="callout" class="col-sm-12 col-md-9">
             <div class="row justify-center">
               <div class="col-10 q-mt-xl">
                 <q-separator size=".2rem" spaced dark />
@@ -50,7 +50,7 @@
           </div>
 
           <!-- CARDS -->
-          <div class="col-12 bg-white">
+          <div class="col-sm-11 col-md-12 bg-white">
             <!-- <div class="row q-gutter-lg justify-center">
               <div class="col-8 text-white">
                 <h2 class="text-bold">Top Features</h2>
@@ -81,7 +81,7 @@
           </div>
 
           <!-- ABOUT -->
-          <div id="about" class="col-9 q-mt-xl q-mb-xl">
+          <div id="about" class="col-sm-12 col-md-9 q-mt-xl q-mb-xl">
             <div class="row justify-center">
 
               <div class="col-10 text-white">
@@ -163,7 +163,7 @@
 
         <div class="row justify-around bg-white">
           <!-- CONTACT -->
-          <div id="contact" class="col-12 col-md-5 q-pb-xl">
+          <div id="contact" class="col-sm-11 col-md-5 q-pb-xl">
             <div class="row justify-center dark">
               <div class="col-12 q-mt-xl">
                 <q-separator size=".2rem" spaced dark />
@@ -171,7 +171,7 @@
               <div class="col-12">
                 <h2 class="text-dark text-bold">Get in touch</h2>
               </div>
-              <div class="col-12 bg-accent q-pa-xl shadow-12">
+              <div class="col-11 col-md-12 bg-accent q-pa-xl shadow-12">
                 <form ref="form">
 
                   <div class="row">
@@ -200,7 +200,7 @@
             </div>
           </div>
           <!-- FEATURES -->
-          <div id="features" class="col-9 col-md-3 q-pb-xl">
+          <div id="features" class="col-sm-9 col-md-3 q-pb-xl">
             <div class="row justify-center">
 
               <div class="col-12 q-mt-xl">
@@ -210,7 +210,7 @@
                 <h2 class="text-bold">Feature List</h2>
               </div>
 
-              <div class="col-12 text-white bg-secondary q-pt-xl q-pb-xl q-pl-xl q-pr-xl big-rounded">
+              <div class="col-11 col-md-12 text-white bg-secondary q-pt-xl q-pb-xl q-pl-xl q-pr-xl big-rounded">
                 <q-list dense padding class="rounded-borders text-center">
                   <q-item v-for="item in items">
                     <q-item-section>
