@@ -4,10 +4,13 @@
     <q-header reveal elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
         <q-toolbar-title>
-          <q-avatar>
-            <img src="../assets/logos/2.png" class="logo">
+          <q-avatar size="6rem">
+            <img src="../assets/carSquare.png" class="logo bg-white">
           </q-avatar>
-          Wash.Cars
+          <div class="float-right">
+            <span class="header-text">Wash.Cars</span>
+
+          </div>
         </q-toolbar-title>
         <q-tabs align="right">
           <!-- <q-route-tab to="/#about" label="About" />

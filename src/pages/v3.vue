@@ -334,7 +334,5 @@ export default defineComponent({
 </script>
 
 <style>
-  .header-text{
-    font-family: 'Exo', sans-serif;
-  }
+
 </style>
