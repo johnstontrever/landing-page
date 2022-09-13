@@ -14,7 +14,7 @@
 
                 </div>
                 <div class="col-12 text-center q-mt-xl">
-                  <q-btn color="primary" size="xl" href="#contact" no-caps>Schedule a demo!</q-btn>
+                  <q-btn color="primary" size="xl" href="https://calendly.com/metroexpresskody/wash-cars-demo" target="_blank" no-caps>Schedule a demo!</q-btn>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="col-12">
                       <q-input v-model="text" name="text" id="text" type="textarea"
-                        label="Get in touch to schedule a demo or find out more information!" dark />
+                        label="Get in touch!" dark />
                     </div>
                   </div>
                   <div class="row q-mt-md">
@@ -241,6 +241,7 @@
 import { defineComponent, ref } from 'vue'
 import emailjs from '@emailjs/browser';
 import { useQuasar } from 'quasar'
+
 
 export default defineComponent({
 
@@ -327,7 +328,7 @@ export default defineComponent({
           this.showFail()
           console.log('FAILED...', error.text);
         });
-    },
+    }
 
   }
 })
